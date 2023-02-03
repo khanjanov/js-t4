@@ -15,15 +15,17 @@
 // }
 // console.log(`${b}`);
 
-//! 5 row 4 column *
-// let a = "";
-// for (let i = 0; i < 5; i++) {
-//   for (let k = 0; k < 4; k++) {
-//     a += "* ";
+//! a row b column *
+// let a = prompt("enter a number");
+// let b = prompt("enter a number");
+// let c = "";
+// for (let i = 0; i < a; i++) {
+//   for (let k = 0; k < b; k++) {
+//     c += "* ";
 //   }
-//   a += "\n";
+//   c += "\n";
 // }
-// console.log(a);
+// console.log(`${c}`);
 
 //! *dan cercive
 // let a = "";
