@@ -56,25 +56,37 @@
 // XXXXX
 //  XXX
 //   X
-let n = +prompt("Enter number:");
-function createRomb(n) {
-  var a = "",
-    countX = 1;
-  if (n % 2 == 0 || n < 1) return false;
-  for (let row = 1; row <= n; row++) {
-    for (var space = 0; space < (n - countX) / 2; space++) {
-      a += " ";
-    }
-    for (let x = 0; x < countX; x++) {
-      a += "x";
-    }
-    if (row <= Math.floor(n / 2)) {
-      countX += 2;
-    } else {
-      countX -= 2;
-    }
-    a += "\n";
+// let n = +prompt("Enter number:");
+// function createRomb(n) {
+//   var a = "",
+//     countX = 1;
+//   if (n % 2 == 0 || n < 1) return false;
+//   for (let row = 1; row <= n; row++) {
+//     for (var space = 0; space < (n - countX) / 2; space++) {
+//       a += " ";
+//     }
+//     for (let x = 0; x < countX; x++) {
+//       a += "x";
+//     }
+//     if (row <= Math.floor(n / 2)) {
+//       countX += 2;
+//     } else {
+//       countX -= 2;
+//     }
+//     a += "\n";
+//   }
+//   return a;
+// }
+// console.log(createRomb(n));
+
+//! factorial
+let a = +prompt("enter a number to find factorial");
+function factorial(n) {
+  if (n <= 1) return false;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
   }
-  return a;
+  return result;
 }
-console.log(createRomb(n));
+console.log(factorial(5));
