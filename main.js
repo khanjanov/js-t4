@@ -81,12 +81,12 @@
 
 //! factorial
 let a = +prompt("enter a number to find factorial");
-function factorial(n) {
-  if (n <= 1) return false;
+function factorial() {
+  if (a <= 1) return false;
   let result = 1;
-  for (let i = 2; i <= n; i++) {
+  for (let i = 2; i <= a; i++) {
     result *= i;
   }
   return result;
 }
-console.log(factorial(5));
+console.log(factorial());
